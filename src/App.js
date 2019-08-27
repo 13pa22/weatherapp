@@ -4,6 +4,8 @@ import './App.css';
 
 import Form from './components/form';
 import Weather from './components/weather';
+import 'react-mdl/extra/material.css';
+import 'react-mdl/extra/material.js';
 
 const API_key = '27151a3481ca6bf95bfcff58a1f7d7ab';
 /*
@@ -69,7 +71,7 @@ state = {
 
 /* all info has to be in one div tag. */
   
-      <div style={{width: '100%',  margin: 'auto'}}> 
+      <div style={{width: '100%',  margin: 'auto',height:"100vh"}}> 
     
 
       <Grid className="landing-grid">
@@ -90,6 +92,17 @@ state = {
     
                 </Grid>
     
+        <Footer size="mini">
+
+       <FooterSection type="left" logo="My Places">
+       
+
+        <FooterLinkList >
+            <a href="https://www.linkedin.com/in/paritosh-arya-6bb45ba5/">My Linkedin</a>
+            <a href="https://github.com/13pa22">My Github</a>
+        </FooterLinkList>
+          </FooterSection>
+        </Footer>
        </div>
 
 
